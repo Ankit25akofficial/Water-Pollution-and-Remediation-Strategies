@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <title>Our Team</title>
+  <style media="screen">
+
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Exo;
+   }
+   @font-face {
+     font-family: Exo;
+     src: url(./fonts/Exo2.0-Medium.otf);
+   }
+   .main{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #0c5db9;
+   }
+   .profile-card{
+     position: relative;
+     font-family: sans-serif;
+     width: 220px;
+     height: 220px;
+     background: #fff;
+     padding: 30px;
+     border-radius: 50%;
+     box-shadow: 0 0 22px #3336;
+     transition: .6s;
+     margin: 0 25px;
+   }
+   .profile-card:hover{
+     border-radius: 10px;
+     height: 260px;
+   }
+   .profile-card .img{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     transition: .6s;
+     z-index: 99;
+   }
+   .profile-card:hover .img{
+     transform: translateY(-60px);
+   }
+   .img img{
+     width: 100%;
+     border-radius: 50%;
+     box-shadow: 0 0 22px #3336;
+     transition: .6s;
+   }
+   .profile-card:hover img{
+     border-radius: 10px;
+   }
+   .caption{
+     text-align: center;
+     transform: translateY(-80px);
+     opacity: 0;
+     transition: .6s;
+   }
+   .profile-card:hover .caption{
+     opacity: 1;
+   }
+   .caption h3{
+     font-size: 21px;
+     font-family: sans-serif;
+   }
+   .caption p{
+     font-size: 15px;
+     color: #0c52a1;
+     font-family: sans-serif;
+     margin: 2px 0 9px 0;
+   }
+   .caption .social-links a{
+     color: #333;
+     margin-right: 15px;
+     font-size: 21px;
+     transition: .6s;
+   }
+   .social-links a:hover{
+     color: #0c52a1;
+   }
+::selection{
+  color: #000;
+  background: #fff;
+}
+.logopic {
+  margin-left: 0;
+}
+nav{
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="mainpage.html"><img src="logo.jpeg" alt="logo" height="55" width="80" class="logopic"></a>
+        <a href="mainpage.html">About US </a>
+      <!-- </div>
+      <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="Future.html">Humanity's Future</a></li>
+        <li><a href="management.html">Solar Energy Management</a></li>
+        <li><a href="work.html">Work With Us</a></li>
+        <li><a href="our team.html">Contact</a></li>
+      </ul>
+    </div> -->
+  </nav>
+    <div class="main">
+        <div class="profile-card">
+            <div class="img">
+                <img src="avatar-image.jpg" alt="Anmol Kannaujiya">
+            </div>
+            <div class="caption">
+                <h3>Ankit Kumar</h3>
+                <p>Project Leader and Developer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="girl2.png">
+            </div>
+            <div class="caption">
+                <h3>Daliya Rajeswari </h3>
+                <p>materials provider</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="avatar-image.jpg">
+            </div>
+            <div class="caption">
+                <h3>Ahammed Ajmal Sinan D M</h3>
+                <p>Researcher only</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
